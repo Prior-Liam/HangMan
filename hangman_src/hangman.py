@@ -6,7 +6,7 @@
 #    By: Prior-Liam <LiamPrior44@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/06 16:14:59 by Prior-Liam        #+#    #+#              #
-#    Updated: 2024/05/07 10:44:15 by Prior-Liam       ###   ########.fr        #
+#    Updated: 2024/05/07 17:41:05 by Prior-Liam       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,6 @@ class Choose_word:#done
         self.word = str(random.choice(self.word_list))
     def Get_word(self):
         return self.word
-
 
 class Make_display:#done
     def __init__(self):
