@@ -6,7 +6,7 @@
 #    By: Prior-Liam <LiamPrior44@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/07 09:57:33 by Prior-Liam        #+#    #+#              #
-#    Updated: 2024/05/07 17:52:39 by Prior-Liam       ###   ########.fr        #
+#    Updated: 2024/05/07 17:54:02 by Prior-Liam       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ class TestHangmanGame(unittest.TestCase):
     def test_game_class(self):
         self.assertEqual(self.game.make_guess('a'), 1)  # Valid guess
         self.assertEqual(self.game.check_guess(), 1)
-        self.assertEqual(self.game.make_guess('a'), 1)  # Already guessed
+        self.assertEqual(self.game.make_guess('a'), 0)  # Already guessed
         self.assertEqual(self.game.make_guess('123'), -1)  # Invalid guess
         self.assertEqual(self.game.make_guess('z'), 1)  # Invalid guess
         self.assertEqual(self.game.check_guess(), 0)
